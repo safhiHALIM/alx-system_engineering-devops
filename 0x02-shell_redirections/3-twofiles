@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+=======
+#!/bin/bash
+>>>>>>> 21f0d58342a0bf3bbcebd38ab65e302abd2fbf09
 cat /etc/passwd /etc/hosts
