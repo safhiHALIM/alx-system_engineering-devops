@@ -1,1 +1,5 @@
-jj
+#!/bin/bash
+while IFS=: read -r user passwd uid gid gecos home shell
+do
+    echo "${user}:${home}"
+done < /etc/passwd | sort
