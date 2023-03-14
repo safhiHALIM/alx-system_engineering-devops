@@ -1,5 +1,2 @@
 #!/bin/bash
-while IFS=: read -r user passwd uid gid gecos home shell
-do
-    echo "${user}:${home}"
-done < /etc/passwd | sort
+read -p "Enter your note: " note && echo "$note" >> notes.txt
