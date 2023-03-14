@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Remove the trailing colons in the PATH
+PATH=$(echo $PATH | sed 's/:*$//')
+
 # Split the PATH variable into an array using ':' as the delimiter
 IFS=':' read -ra PATH_DIRS <<< "$PATH"
 
