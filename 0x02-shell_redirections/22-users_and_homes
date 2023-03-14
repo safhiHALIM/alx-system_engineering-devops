@@ -1,1 +1,2 @@
-jj
+#!/bin/bash
+read -p "Enter your note: " note && echo "$note" >> notes.txt
