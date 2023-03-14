@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Remove the trailing colons in the PATH
-PATH=$(echo $PATH | sed 's/:*$//')
-
-# Split the PATH variable into an array using ':' as the delimiter
-IFS=':' read -ra PATH_DIRS <<< "$PATH"
-
-# Count the number of elements in the array
-NUM_PATH_DIRS=${#PATH_DIRS[@]}
-
-# Print the number of directories in the PATH
-echo "$NUM_PATH_DIRS"
+echo $((`echo $PATH | grep -o ":/" | wc -l` + 1))
