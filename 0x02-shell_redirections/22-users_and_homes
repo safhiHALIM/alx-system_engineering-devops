@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter your note: " note && echo "$note" >> notes.txt
+cut -d ":" -f 1,6 /etc/passwd | sort
