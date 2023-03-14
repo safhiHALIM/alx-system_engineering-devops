@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=':' read -ra DIRS <<< "$PATH"
+IFS=':' read -ra DIRS <<< "$PATH=/bin::::/home:/usr:::::/home/me"
