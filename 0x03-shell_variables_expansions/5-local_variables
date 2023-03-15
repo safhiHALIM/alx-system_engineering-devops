@@ -1,15 +1,2 @@
 #!/bin/bash
-
-# List local variables
-echo "LOCAL VARIABLES:"
-declare -p
-
-
-echo ""
-echo "ENVIRONMENT VARIABLES:"
-env
-
-
-echo ""
-echo "FUNCTIONS:"
-declare -F
+set
